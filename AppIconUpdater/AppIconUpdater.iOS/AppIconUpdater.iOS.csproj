@@ -68,6 +68,7 @@
     <None Include="Entitlements.plist" />
     <None Include="Info.plist" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="AppIconSwitchService.cs" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
@@ -132,5 +133,9 @@
       <Project>{FBB83F15-4289-4541-B779-28423848D1A1}</Project>
       <Name>AppIconUpdater</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\maui-logo%402x.png" />
+    <BundleResource Include="Resources\maui-logo%403x.png" />
   </ItemGroup>
 </Project>

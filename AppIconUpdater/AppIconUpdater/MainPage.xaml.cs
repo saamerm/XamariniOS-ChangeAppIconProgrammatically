@@ -14,5 +14,17 @@ namespace AppIconUpdater
         {
             InitializeComponent();
         }
+
+        async void Xamarin_Button_Clicked(System.Object sender, System.EventArgs e)
+        {
+            var iconSwitcher = DependencyService.Get<IAppIconSwitchService>();
+            await iconSwitcher.SwitchAppIcon(null);
+        }
+
+        async void Maui_Button_Clicked(System.Object sender, System.EventArgs e)
+        {
+            var iconSwitcher = DependencyService.Get<IAppIconSwitchService>();
+            await iconSwitcher.SwitchAppIcon("MauiLogo");
+        }
     }
 }
